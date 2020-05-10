@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "addNews";
+    Layout = "~/Views/Shared/dashboardHeader.cshtml";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Add new Post
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6">
+                
+                <form role="form">
+                    <div class="form-group">
+                        @Html.Label("post title")
+                        @Html.TextBox("title", "title", new { @class = "form-control" })
+
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("descrption")
+                        @Html.TextArea("descrption", "descrption", new { @class = "form-control"})
+                       
+                    </div>
+
+                    <div class="form-group">
+                        <label>media</label>
+                        <input type="file"
+                               id="avatar" name="avatar"
+                               accept="image/*, video/*">
+                       
+                    </div>
+
+                    
+                        
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" />is Active post?
+                            </label>
+                        </div>
+                        
+                 
+
+
+                    <button type="submit" class="btn btn-default">Add</button>
+                    
+
+               
+</form></div></div>
+
+            </div></div>

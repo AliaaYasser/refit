@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "addFinances";
+    Layout = "~/Views/Shared/dashboardHeader.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2> Add Finances</h2>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <!-- Advanced Tables -->
+        <div class="panel panel-default">
+
+            <div class="panel-body">
+                <div class="table-responsive">
+
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayName("Full Name")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Mail")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Mobile")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Player Job")
+                                </th>
+                                <th><i class="fa fa-gear fa-spin" style="font-size:24px"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (var item = 0; item <= 10; item++)
+                            {
+                                <tr class="even gradeC">
+
+                                    <td>
+                                        nancy hamed
+                                    </td>
+                                    <td>
+                                        nancyhamed71@gmail.com
+                                    </td>
+                                    <td>
+                                        01113576780
+                                    </td>
+                                    <td>
+                                        tester app
+                                    </td>
+                                    <td>
+
+                                        <button style="border:none;background:none;color:orangered" class="fa fa-plus" onclick="openForm()"></button>
+
+                                        <div class="form-popup" id="myForm">
+                                            <form action="#" class="form-container">
+                                                <button style="background-color:none;border:none; " onclick="closeForm()">&#10007;</button>
+                                                <h1>Add appointment</h1>
+
+                                                <label for="email"><b>Wanted Price </b></label>
+                                                <input type="text" />
+                                                <br />
+                                                <label for="psw"><b>Payed </b></label>
+                                                <input type="text" placeholder="Ex:123.4" required>
+                                                <label for="email"><b>Dept</b></label>
+                                                <input type="text" />
+                                                <br />
+                                                <label for="email"><b>Start Date  </b></label>
+                                                <input type="date" id="date"/>
+                                                <br />
+                                                <label for="psw"><b>End Date</b></label>
+                                                <input type="date" id="date" required>
+                                                <br />
+                                                <label for="email"><b>Date Of Remaining price</b></label>
+                                                <input type="date" id="date" />
+                                                <br />
+                                                <label>Note</label>
+                                                <input type="text" />
+                                                <button type="submit" class="btn">Save</button>
+                                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Advanced Tables -->

@@ -1,0 +1,79 @@
+﻿
+@{
+                /**/
+
+                ViewBag.Title = "showAllFinance";
+                Layout = "~/Views/Shared/dashboardHeader.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2> All Finances</h2>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <!-- Advanced Tables -->
+        <div class="panel panel-default">
+
+            <div class="panel-body">
+                <div class="table-responsive">
+
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayName("Amount")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Payed")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Dept")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("pay date")
+                                </th>
+                                <th>Remaining Date</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (var item = 0; item <= 10; item++)
+                            {
+                            <tr class="even gradeC">
+
+                                <td>
+                                    @item
+                                </td>
+                                <td>
+                                    @item+8
+                                </td>
+                                <td>
+                                    @item  + 80
+                                </td>
+                                <td>
+                                    6/6/2020
+                                </td>
+                                <td>
+                                    6/6/2020
+
+                                </td>
+                                <td>
+                                    some notes
+
+                                </td>
+                            </tr>
+
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Advanced Tables -->

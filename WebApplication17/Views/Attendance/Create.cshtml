@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WebApplication17.Models.News>
+
+@{
+    ViewBag.Title = "Add attendence";
+    Layout = "~/Views/Shared/dashboardHeader.cshtml";
+}
+
+<h2>
+     Add Attendance</h2>
+
+
+    <table >
+        <tr>
+            <th>
+                @Html.DisplayName("Full Name")
+            </th>
+            <th>
+                @Html.DisplayName("Mail")
+            </th>
+            <th>
+                @Html.DisplayName("Mobile")
+            </th>
+            <th>
+                @Html.DisplayName("Player Job")
+            </th>
+            <th><i class="fa fa-gear fa-spin" style="font-size:24px"></i></th>
+        </tr>
+
+        @for (var item =0; item<=10; item++)
+        {
+            <tr>
+                <td>
+                    @Html.Display("nancy hamed")
+                </td>
+                <td>
+                    @Html.Display("nancyhamed71@gmail.com")
+                </td>
+                <td>
+                    @Html.Display("01113576780")
+                </td>
+                <td>
+                    @Html.Display("tester app")
+                </td>
+                <td>
+                   
+                    @Html.ActionLink(" ", "Edit","Attendance",null,new { @class = "fa fa-plus" })
+
+                </td>
+            </tr>
+        }
+
+    </table>

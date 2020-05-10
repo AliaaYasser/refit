@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "showAllAppointment";
+    Layout = "~/Views/Shared/dashboardHeader.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2> All Appointement </h2>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <!-- Advanced Tables -->
+        <div class="panel panel-default">
+           
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayName("Serial")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Player Name")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Doctor Name")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Date Appointment")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Trainer")
+                                </th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (var item = 0; item <= 10; item++)
+                            {
+                                <tr class="even gradeC">
+
+                                    <td>
+                                       @item
+                                    </td>
+                                    <td>
+                                        nancy hamed
+                                    </td>
+                                    <td>
+                                        ahmed abdel aziz
+                                    </td>
+                                    <td>
+                                        27/04/2020 06:04:SS
+                                    </td>
+                                    <td>
+
+                                       mohamed
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Advanced Tables -->

@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "showAllAttendance";
+    Layout = "~/Views/Shared/dashboardHeader.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2> All Attendance</h2>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <!-- Advanced Tables -->
+        <div class="panel panel-default">
+           
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayName("Player Name")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Date Of Birth")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Age")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Trainer")
+                                </th>
+                                
+                           
+                                <td> @Html.DisplayName("Date")</td>
+                                <td> @Html.DisplayName("Time")</td>
+                            
+                            
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            @for (var item = 0; item <= 10; item++)
+                            {
+                            <tr class="even gradeC">
+
+                                <td>
+                                    elsadat
+                                </td>
+                                <td>
+                                    9/7/2019
+                                </td>
+                                <td>
+                                    18
+                                </td>
+                                <td>
+                                    admin
+                                </td>
+                                <td>
+                                    08/05/2020
+                                </td>
+                                <td>
+                                    12:39:05
+                                </td>
+
+                            </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Advanced Tables -->

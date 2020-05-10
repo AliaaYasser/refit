@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "showFollowAttendance";
+    Layout = "~/Views/Shared/dashboardHeader.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2> Follow Attendance</h2>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <!-- Advanced Tables -->
+        <div class="panel panel-default">
+           
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayName("Serial")
+                                </th>
+                                
+                                <th>
+                                    @Html.DisplayName("Player Name")
+                                </th>
+                                <th>
+                                    @Html.DisplayName("Count")
+                                </th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (var item = 0; item <= 50; item++)
+                            {
+                                <tr class="even gradeC">
+
+                                    <td>
+                                       @item
+                                    </td>
+                                  
+                                    <td>
+                                        player name
+                                    </td>
+                                    <td>
+                                        @item
+                                    </td>
+                                   
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Advanced Tables -->
